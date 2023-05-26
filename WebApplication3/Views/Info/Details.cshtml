@@ -1,0 +1,21 @@
+﻿@model WebApplication3.Models.Students //now its strongly typed as we will get intellisense
+<html>
+
+<head>
+    <title>@ViewBag.title</title>
+</head>
+<body>
+    <h1>@ViewBag.title</h1>
+
+    <div>
+        Name : @Model.Name  <!--Please note that m is capital in Model-->
+    </div>
+    <div>
+        Year : @Model.Year
+    </div>
+    <div>
+        Department : @Model.Department
+    </div>
+
+</body>
+</html>

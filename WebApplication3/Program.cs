@@ -23,6 +23,14 @@ app.UseStaticFiles();
 
 
 app.UseRouting();
+//conventional routing
+app.UseEndpoints(endpoints =>
+{
+    endpoints.MapControllerRoute(
+        name: "default",
+        pattern: "{controller=Home}/{action=Details}/{id?}"
+        );
+});
 app.UseEndpoints(endpoints =>
 {
     endpoints.MapDefaultControllerRoute();
